@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 1250px;
+            height: 397px;
+            border:1px solid #000;
+            position: absolute;
+            overflow: hidden;
+        }
+        #ul{
+            height: 397px;
+            width: 6250px;
+            margin: 0 auto;
+            position: absolute;
+        }
+        #ul li{
+            float: left;
+            position: relative;
+            list-style: none;
+        }
+        #ul li img{
+            width: 1250px;
+            height: 397px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <ul id="ul">
+            <li><img src="images/banner_01.jpg" alt=""/></li>
+            <li><img src="images/banner_02.jpg" alt=""/></li>
+            <li><img src="images/banner_03.jpg" alt=""/></li>
+            <li><img src="images/banner_04.jpg" alt=""/></li>
+            <li><img src="images/banner_05.jpg" alt=""/></li>
+        </ul>
+    </div>  
+<script>
+    var box=document.getElementById("box");
+    var ul=document.getElementById('ul');
+    var tempLi = ul.children[0].cloneNode(true);
+    ul.appendChild(tempLi);
+    var imgList=ul.children;
+
+
+    var timer=setInterval(autoPlay,50);
+
+    function animate(){
+        
+        for(var i=0;i<6;i++){
+            var now=parseInt(getStyle(imgList[i],"right"));
+            console.log(imgList[i].style["right"]);
+            var speed=20;
+            var current=(speed+now);
+            imgList[i].style["right"]=current+'px';  
+        
+    }
+    }
+    var key=0;
+    function autoPlay() { 
+        animate();
+        ul.style.left = 0;
+               
+    }
+    
+    
+
+    function getStyle(ele,attr){
+        if(ele.currentStyle){
+            return ele.currentStyle[attr];
+        }else{
+            return getComputedStyle(ele,null)[attr];
+        }
+    }
+</script> 
+</body>
+</html>
