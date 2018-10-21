@@ -1,0 +1,32 @@
+<div class="containt">
+  <div class="right">
+      <ul>
+        <li *ngFor="let person of communitys,let i=index">
+          <a>
+            <div id="img">
+              <img id="img1" src="{{person.imgperson}}"  alt="" width="40" height="40" style="  border-radius:20px">
+              <img id="img2" src="{{person.img}}" alt="" width="130" height="90">
+            </div>
+            <div id="txt">
+              <p id="p1">{{person.name}}</p>
+              <p id="p2">{{person.context}}</p>
+            </div>
+            <div id="detail">
+                <span id="span1">{{person.person}}&nbsp;&nbsp;{{person.data}}</span>
+                <span id="span2">阅读 {{person.readnum}} 评论 {{person.writenum}}&nbsp;&nbsp;</span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+  </div>
+  <div class="left">
+     <p>热门话题</p>
+     <ul>
+       <li *ngFor="let topic of topics">
+         #<a href="" id="topic">{{topic}}</a>#
+       </li>
+     </ul>
+  </div>
+</div>
+

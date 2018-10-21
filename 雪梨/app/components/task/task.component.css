@@ -1,0 +1,52 @@
+.taskhead{
+    width: 800px;
+    height: 50px;
+    border: 1px solid;
+}
+.taskhead>ul>li{
+    float: left;
+    margin-left: 50px;
+    margin-top: 30px;
+    cursor:pointer;
+    font-size: 14px;
+}
+.taskhead>ul>li>input{
+    margin-left: 250px;
+    margin-top: -10px;
+}
+.taskdetail{
+    margin: 20px;
+}
+.taskdetail li{
+    margin-bottom: 20px;
+}
+#p1{
+    width:720px;
+    height: 40px;
+    border: 1px solid lightgray;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 40px;
+    padding-left: 20px;
+}
+
+#p1 span{
+        width: 250px;
+        height: 10px;
+        border: 1px solid darkgray;
+        font-size: 12px;
+        font-weight: normal;
+        color: darkgray;
+        margin-left: 5px;
+        padding: 0 5px;
+}
+
+#p2{
+    width:700px;
+    height: 30px;
+    border: 1px solid lightgray;
+    font-size: 13px;
+    line-height: 30px;
+    padding-left: 40px;
+    background-color:whitesmoke;
+}

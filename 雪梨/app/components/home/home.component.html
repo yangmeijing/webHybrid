@@ -1,0 +1,21 @@
+<div class="body">
+    <div class="left">
+        <a [routerLink]="['/home']"><div id="headimg"></div></a>
+      <ul class="person">
+        <li id="name">{{person?.name}}</li>
+        <li id="like">{{person?.like}}<br>关注</li>
+        <li id="beliked">{{person?.beliked}}<br>粉丝</li>
+      </ul>
+      <ul class="link">
+        <li><a [routerLink]="['./task']">任务</a></li>
+        <li><a [routerLink]="['./tongbu']">同步课</a></li>
+        <li><a [routerLink]="['./course']">课程</a></li>
+        <li><a [routerLink]="['./talkdetail']">且说</a></li>
+        <li><a [routerLink]="['./noticedetail']">通知</a></li>
+      </ul>
+    </div>
+    <!-- <img src="assets/images/10.jpg" />  插入图片，以index.html填路径。 -->
+    <div class="right">
+      <router-outlet></router-outlet>
+    </div>
+</div>

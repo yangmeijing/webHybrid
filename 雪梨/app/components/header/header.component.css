@@ -1,0 +1,22 @@
+nav{
+    height: 50px;
+    width: 1360px;
+    border-bottom: 2px solid #d6d6c2;
+}
+.nav{
+    width: 800px;
+    height:50px; 
+    margin-left:600px;
+    position: relative;
+    bottom: 45px;
+   
+}
+.nav li{
+    float: left;
+    margin: 0 15px;
+    margin-top: 15px;
+}
+#logo{
+    margin-top: 10px;
+    margin-left: 150px;
+}

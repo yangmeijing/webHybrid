@@ -1,0 +1,20 @@
+<div class="taskhead">
+    <ul>
+      <li id="-1" (click)="change($event)">未提交</li>
+      <li id="0" (click)="change($event)">已完成</li>
+      <li id="1" (click)="change($event)">已完结</li>
+      <li><input type="text" placeholder="输入同步课名称搜索"><button>搜索</button></li>
+    </ul>
+    
+</div>
+
+<div class="taskdetail" [ngSwitch]="num">
+    <ul>
+        <li *ngFor="let task of tasks">
+            <div *ngIf="task.id==num">
+                <p id="p1">{{task.namenum}}<span>{{task.endate}}</span></p>
+                <p id="p2">{{task.name}}</p>
+              </div>
+        </li>
+    </ul>
+</div>

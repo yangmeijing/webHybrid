@@ -1,0 +1,45 @@
+.left{
+    height: 500px;
+    width: 150px;
+    border: 1px solid;
+    margin-left: 150px;
+    float: left;
+}
+.right{
+    height: 500px;
+    width: 800px;
+    border: 1px solid;
+    float: left;
+    margin-left: 50px;
+}
+#headimg{
+    width: 150px;
+    height: 150px;
+    background-image: url(http://www.edu2act.net/static/img/m.png);
+}
+.person{
+    width: 150px;
+    height: 80px;
+    margin-top: 30px;
+    /* border: 1px solid; */
+}
+#name{
+    text-align: center;
+}
+#like,#beliked{
+    float: left;
+    /* border: 1px solid; */
+    text-align: center;
+    margin-left: 27px;
+    margin-top: 5px;
+}
+.link{
+    /* border: 1px solid; */
+    width: 150px;
+    height: 200px;
+    margin-top: 10px;
+}
+.link li{
+    margin-top: 15px;
+    margin-left: 20px;
+}

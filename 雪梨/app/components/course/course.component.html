@@ -1,0 +1,31 @@
+<div class="container">
+  <select>
+    <option value="课程分类">课程分类</option>
+    <option value="web前端开发">web前端开发</option>
+    <option value="web后端开发">web后端开发</option>
+    <option value="移动应用开发">移动应用开发</option>
+    <option value="软件测试">软件测试</option>
+    <option value="数据库">数据库</option>
+  </select>
+  <select>
+      <option value="课程体系">课程体系</option>
+      <option value="web前端工程师">web前端工程师</option>
+      <option value="Android开发工程师">Android开发工程师</option>
+      <option value="MySQL数据库工程师">MySQL数据库工程师</option>
+      <option value="产品设计">产品设计</option>
+      <option value="软件测试工程师">软件测试工程师</option>
+    </select>
+  <ul>
+    <li *ngFor="let course of bigcourses;">
+        <a [routerLink]="['/course',course.id]">
+        <img src="{{course.images}}" alt="" height="130px" width="238px"/>
+        <p id="p1">{{course.courseName}}</p>
+        <p id="p2">{{course.text}}</p>
+        <div>
+          <span id="span1">课时{{course.coursenum}}</span>
+          <span id="span2">人数{{course.person}}</span>
+        </div>
+    </a>
+    </li>
+  </ul>
+</div>

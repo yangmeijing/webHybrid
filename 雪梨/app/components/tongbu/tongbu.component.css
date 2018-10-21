@@ -1,0 +1,49 @@
+.container{
+    width: 1000px;
+    height: 1000px;
+    /* border: 1px solid ; */
+}
+.container li{
+    width: 230px;
+    height: 250px;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(202, 229, 238);
+}
+.container ul{
+    margin-left: 15px;
+}
+p{
+    margin-top: 10px;
+    margin-left: 15px;
+    overflow: hidden;/*内容超出后隐藏*/
+    text-overflow: ellipsis;/* 超出内容显示为省略号*/
+    white-space: nowrap;/*文本不进行换行*/
+}
+.container div{
+    /* border: 1px solid ; */
+    margin-top: 40px;
+    font-size: 12px;
+    overflow: hidden;
+}
+span{
+    margin-left: 5px;
+}
+button{
+    margin-left: 50px;
+    background-color: rgb(218, 91, 45);
+    border:1px solid rgb(231, 66, 6);
+    width: 60px;
+    height: 23px;
+    color: aliceblue;
+    cursor: pointer;
+}
+/* #span1:before{
+    content: "";
+    display: inline-block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+} */
