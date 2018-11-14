@@ -1,0 +1,48 @@
+<ion-header>
+  <input type="search" name="search" placeholder="双12特惠好物超低价"/>
+</ion-header>
+
+<ion-content>
+  <img src="assets/imgs/shop01.png" alt="/">
+  <ul class="navList">
+    <li *ngFor="let item of arr;let idx=index;" (click)="isActive(idx)" [class.first]="active==idx">
+      {{item}}
+    </li>
+  </ul>
+  <div [ngSwitch]="active" class="switch">
+    <div *ngSwitchCase="0">
+      <div class="title">
+        <span>——    沙发   ——</span>
+      </div>
+      <ul class="goods">
+          <li>
+              <img src="assets/imgs/shop02.png" alt="">
+          </li>
+          <li>
+              <img src="assets/imgs/shop02.png" alt="">
+          </li>
+          <li>
+              <img src="assets/imgs/shop02.png" alt="">
+          </li>
+          <li>
+              <img src="assets/imgs/shop02.png" alt="">
+          </li>
+        </ul>
+    </div> 
+    <div *ngSwitchCase="1">
+
+    </div>
+    <div *ngSwitchCase="2">
+
+    </div>
+    <div *ngSwitchCase="3">
+
+    </div>
+    <div *ngSwitchCase="4">
+
+    </div>
+    <div *ngSwitchCase="5">
+
+    </div>
+  </div>
+</ion-content>
